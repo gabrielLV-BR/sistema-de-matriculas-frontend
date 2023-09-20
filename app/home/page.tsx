@@ -1,5 +1,19 @@
-import { permanentRedirect } from "next/navigation"
+import styles from "./styles.module.scss"
 
 export default function HomePage() {
-    return <p>HOME</p>;
+    return (
+        <main className={styles.container}>
+            <h1>Bem vindo ao sistema, {'{NOME}'}!</h1>
+            <hr />
+            Aprenda mais sobre o que você pode fazer com esse sistema:
+
+            <ul className={styles.utilities}>
+                <li>Cadastrar alunos</li>
+                <li>Cadastrar escolas</li>
+                <li>Matricular alunos</li>
+                <li>Consultar dados estatísticos</li>
+                <li>Exportar dados para planilhas</li>
+            </ul>
+        </main>
+    )
 }
