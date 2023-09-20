@@ -1,5 +1,5 @@
 import { permanentRedirect } from "next/navigation"
 
-export default function Home() {
-    return <p>HoME</p>;
+export default function HomePage() {
+    return <p>HOME</p>;
 }
