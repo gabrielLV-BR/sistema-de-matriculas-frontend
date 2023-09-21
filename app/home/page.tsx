@@ -1,3 +1,4 @@
+import { InputText } from "../components/InputText"
 import styles from "./styles.module.scss"
 
 export default function HomePage() {
@@ -6,6 +7,8 @@ export default function HomePage() {
             <h1>Bem vindo ao sistema, {'{NOME}'}!</h1>
             <hr />
             Aprenda mais sobre o que você pode fazer com esse sistema:
+
+            <InputText />
 
             <ul className={styles.utilities}>
                 <li>Cadastrar alunos</li>

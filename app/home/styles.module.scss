@@ -1,21 +1,27 @@
 .container {
     display: flex;
     flex-direction: column;
-    place-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 
-    padding: 10rem;
+    padding: 10%;
 
     h1 {
         font-size: 1.4rem;
     }
-
 }
 
-.container .utilities {
+.utilities {
+    align-self: center;
+
     list-style-position: inside;
     background-color: #dcdcdc;
 
     padding: 1rem 2rem;
     margin: 0.5rem;
     border-radius: 0.5rem;
+
+    line-height: 2rem;
+
+    min-width: 80%;
 }
