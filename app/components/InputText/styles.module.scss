@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    &, input {
+        width: 100%;
+    }
+
+    label {        
+        position: absolute;
+        left: 1.05rem;
+        top: 50%;
+
+        display: none;
+
+        translate: 0 -50%;
+    }
+
+    input {
+        border-radius: 0.5rem;
+        padding: 1rem;
+        border: 1px solid black;
+    }
+
+    label, input::placeholder {
+        font-size: 1rem;
+        font-family: 'Open Sans', sans-serif;
+        color: gray;
+        opacity: 0.8;
+    }
+
+    input:focus {
+        outline: 2px solid aquamarine;
+    }
+
+    input:not(:placeholder-shown) + label {
+        display: block;
+        scale: 0.6;
+        translate: -0.6rem -1.6rem;
+    }
+}

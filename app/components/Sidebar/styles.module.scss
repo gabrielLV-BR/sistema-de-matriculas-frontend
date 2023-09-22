@@ -1,35 +1,17 @@
 .container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
-
-    &, .margin, .content {
-        width: 10vw;
-        min-width: 5rem;
-        height: 100vh;
-    }
-}
-
-.container .content {
-    outline: 5px solid green;
-    background-color: white;
-    color: black;
-
-    font-size: 1.2rem;
-
-    list-style: none;
-
-    position: absolute;
-
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    width: 100%;
+    padding: 2rem;
+    height: 100vh;
+
+    font-size: 1.2rem;
+    list-style: none;
+
+    background-color: white;
+    box-shadow: 0 0 5px #00000050;
 
     :first-child, :last-child {
         margin-top: auto;
@@ -37,5 +19,23 @@
 
     :last-child {
         margin-bottom: 2rem;
+    }
+}
+
+.sidebar-item {
+    align-self: flex-start;
+}
+
+.sidebar-item .link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 1rem;
+    margin: 1rem;
+
+    img {
+        margin: 0 !important;
     }
 }

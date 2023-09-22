@@ -1,14 +1,11 @@
-import { InputText } from "../components/InputText"
+import { useState } from "react"
 import styles from "./styles.module.scss"
 
 export default function HomePage() {
     return (
         <main className={styles.container}>
-            <h1>Bem vindo ao sistema, {'{NOME}'}!</h1>
+            <h1>Bem vindo ao sistema, Gabriel!</h1>
             <hr />
-            Aprenda mais sobre o que você pode fazer com esse sistema:
-
-            <InputText />
 
             <ul className={styles.utilities}>
                 <li>Cadastrar alunos</li>

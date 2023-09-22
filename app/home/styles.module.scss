@@ -9,6 +9,13 @@
     h1 {
         font-size: 1.4rem;
     }
+
+    hr {
+        width: 100%;
+        border-width: 1px;
+
+        margin: 0.4rem 2rem;
+    }
 }
 
 .utilities {
@@ -17,11 +24,13 @@
     list-style-position: inside;
     background-color: #dcdcdc;
 
-    padding: 1rem 2rem;
+    padding: 2.5rem;
     margin: 0.5rem;
     border-radius: 0.5rem;
 
-    line-height: 2rem;
+    font-size: 1.5rem;
+
+    line-height: 2.3rem;
 
     min-width: 80%;
 }

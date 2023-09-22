@@ -1,3 +1,3 @@
-export default function StudentsPage() {
-    return <p>ALUNOS</p>
+export default function StudentPage() {
+    return <p>Página dos alunuos</p>
 }

@@ -1,0 +1,41 @@
+.container,
+.container .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    align-items: flex-start;
+
+    gap: 1rem;
+    padding: 5rem;
+
+    hr {
+        width: 100%;
+        border: 1px solid #00000020;
+        margin: 1rem;
+    }
+}
+
+.container .form {
+    align-items: center;
+
+    width: 100%;
+    gap: 0.5rem;
+
+    input[type=submit] {
+        padding: 0.5rem 1.5rem;
+        border: 1px solid transparent;
+        border-radius: 0.3rem;
+
+        align-self: flex-start;
+
+        background-color: #1f71ff;
+        color: white;
+    }
+
+    input[type=submit]:hover {
+        background-color: #0e46a7;
+    }
+}
